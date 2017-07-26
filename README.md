@@ -3,6 +3,63 @@
 ### Content TBD
 Content TBD
 
+### Configure (Global) git config
+```
+git config -- global user.email “whoever@wherever.com”
+git config -- global user.name “whoever”
+```
+
+### Configure (Local) git config—so far this doesn’t work!!!
+Overrides global settings for a particular repo (see [this post](https://notechnique.wordpress.com/2010/02/26/git-check-your-config/))….
+```
+git config user.email “whoever@wherever.com”
+
+git config user.name “whoever”
+```
+
+### Clone repository locally
+This clones the repo locally; not the same as forking.
+```
+git clone https://github.com/alban316/myrepo 
+```
+
+### If you already have files in a local folder
+Create a repository on github, then:
+
+```
+git init
+
+git remote add origin https://github.com/alban316/myrepo.git
+
+git add -- all
+
+git commit -m &quot;some remarks initial commit&quot;
+
+git push -u origin master
+```
+
+The files are pushed from local out to github.
+
+### Adding remote (github) content to local
+
+```
+git pull https://github.com/alban316/myrepo.git
+```
+(if VIM launches, press &lt;Escape&gt; then type :q)
+
+### Committing changes to git
+```
+git commit -m &quot;some remarks about nature of updates&quot;
+```
+### Pushing changes to github
+```
+git push -u origin master
+```
+Getting updates from remote
+
+git pull origin master
+
+
 
 ### Merge conflict prerequisites & references
 Consider installing free, [Kdiff](http://kdiff3.sourceforge.net/), as recommended by multiple threads on StackOverflow, including [this one](https://stackoverflow.com/questions/4957630/how-do-you-merge-in-git-on-windows).
