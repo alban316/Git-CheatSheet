@@ -55,12 +55,30 @@ git commit -m &quot;some remarks about nature of updates&quot;
 ```
 git push -u origin master
 ```
-Getting updates from remote
-
+### Getting updates from remote
+```
 git pull origin master
+```
+### Checking status
+```
+git status
+```
+### Remove a file from repo, but NOT from file system
+```
+git rm -- cached file.txt
+git rm -- cached somefolder/*
+```
+Meanwhile, ```git rm file.txt``` removes the file from the repo but also deletes it from the local file system.
 
-
-
+### Some bash commands
+#### To remove a folder and all of its subfolders:
+```
+rm -rf myfolder
+```
+#### To list folder contents:
+```
+ls
+```
 ### Merge conflict prerequisites & references
 Consider installing free, [Kdiff](http://kdiff3.sourceforge.net/), as recommended by multiple threads on StackOverflow, including [this one](https://stackoverflow.com/questions/4957630/how-do-you-merge-in-git-on-windows).
 
