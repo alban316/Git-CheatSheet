@@ -114,3 +114,29 @@ git commit
 
 git merge --continue
 ```
+### Working with **Git Stash**
+#### To stash changes (but not adds!)
+```
+git stash
+```
+#### To apply stashed files to the current branch
+```
+git stash apply
+```
+See also *Apply a specific stash*, below
+#### To list the stashes (there may be multiple)
+```
+git stash list
+```
+#### To show files in a stash
+```
+git stash show 1
+```
+#### Drop a stash
+```
+git stash drop 1
+```
+#### Apply a specific stash
+```
+git stash apply 1
+```
