@@ -9,7 +9,7 @@ git config -- global user.email “whoever@wherever.com”
 git config -- global user.name “whoever”
 ```
 
-### Configure (Local) git config—so far this doesn’t work!!!
+### Configure (Local) git config
 Overrides global settings for a particular repo (see [this post](https://notechnique.wordpress.com/2010/02/26/git-check-your-config/))….
 ```
 git config user.email “whoever@wherever.com”
@@ -140,3 +140,10 @@ git stash drop 1
 ```
 git stash apply 1
 ```
+
+### Undo Last Commit
+```
+git reset HEAD~
+```
+See also [this thread](https://stackoverflow.com/questions/19303898/how-to-undo-last-commit#19303993)
+Note: If you've already pushed, either don't do this at all **OR** after it's undone, create a new branch and abandon the other. Assuming this is an option. Otherwise you're now behind what you previously pushed.
