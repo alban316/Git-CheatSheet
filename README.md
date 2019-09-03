@@ -147,3 +147,9 @@ git reset HEAD~
 ```
 See also [this thread](https://stackoverflow.com/questions/19303898/how-to-undo-last-commit#19303993)
 Note: If you've already pushed, either don't do this at all **OR** after it's undone, create a new branch and abandon the other. Assuming this is an option. Otherwise you're now behind what you previously pushed.
+
+### Recover deleted files
+```
+git checkout 62fe2f5f~1 ProcessSchema/*.*
+```
+...where 62fe2f5f is the commit, and ProcessSchema/*.* is the folder/files to be recovered. More info [here](http://blog.kablamo.org/2013/12/08/git-restore/).
