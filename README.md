@@ -153,3 +153,9 @@ Note: If you've already pushed, either don't do this at all **OR** after it's un
 git checkout 62fe2f5f~1 ProcessSchema/*.*
 ```
 ...where 62fe2f5f is the commit, and ProcessSchema/*.* is the folder/files to be recovered. More info [here](http://blog.kablamo.org/2013/12/08/git-restore/).
+
+### Change origin URL, e.g. to switch to a PAT
+```
+git remote set-url origin https://<myaccount>:<pat>@github.com/<myaccount>/<myrepo>.git
+```
+[more info](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository) and [tokens](https://github.com/settings/tokens)
