@@ -154,6 +154,11 @@ git checkout 62fe2f5f~1 ProcessSchema/*.*
 ```
 ...where 62fe2f5f is the commit, and ProcessSchema/*.* is the folder/files to be recovered. More info [here](http://blog.kablamo.org/2013/12/08/git-restore/).
 
+### View origin URL
+```
+git remote get-url origin
+```
+
 ### Change origin URL, e.g. to switch to a PAT
 ```
 git remote set-url origin https://<myaccount>:<pat>@github.com/<myaccount>/<myrepo>.git
