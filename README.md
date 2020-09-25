@@ -141,6 +141,11 @@ git stash drop 1
 git stash apply 1
 ```
 
+### Undo Last Add (Before Commit)
+```
+git reset
+```
+
 ### Undo Last Commit
 ```
 git reset HEAD~
